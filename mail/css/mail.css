@@ -1,5 +1,19 @@
 /*********************** CSS UTILI ***********************/
 body {
     background-color: black;
+    color: white;
 }
 
+.user {
+    background-color: red;
+    height: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.no-user {
+    background-color: blueviolet;
+    height: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
