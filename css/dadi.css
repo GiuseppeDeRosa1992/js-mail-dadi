@@ -3,3 +3,23 @@ body {
     background-color: black;
     color: white;
 }
+
+.user {
+    background-color: red;
+}
+
+.both {
+    background-color: goldenrod;
+}
+
+.winner {
+    background-color: blueviolet;
+}
+
+.user,
+.both,
+.winner {
+    height: 5rem;
+    font-size: 2rem;
+    text-align: center;
+}
