@@ -40,14 +40,17 @@ const div = document.getElementById("mail")
 // }
 
 //Bonus stampo messaggio positivo o negativo in base al caso
-for (let number = 0; number < mailAccess.length; number++) {
+let mailFind = false
+for (let number = 0; number < mailAccess.length && mailFind == false; number++) {
     //se corrisponde allora può accedere
     if (mailUser == mailAccess[number]) {
-        div.innerHTML += `<div class="user">L'utente è nella lista e può Accedere</div>`
         console.log("L'utente è nella lista e può Accedere", mailAccess[number])
+        mailFind = true
     }
-    else {
-        div.innerHTML += `<div class="no-user">Negativo l'utente non è nella lista</div>`
-        console.log("Negativo l'utente non è nella lista")
-    }
+}
+
+if (mailFind == true) {
+    div.innerHTML += `<div class="user">L'utente è nella lista e può Accedere</div>`
+} else {
+    div.innerHTML += `<div class="no-user">Negativo l'utente non è nella lista</div>`
 }
